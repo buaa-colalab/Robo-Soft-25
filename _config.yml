@@ -1,0 +1,18 @@
+theme: jekyll-theme-cayman
+title: "RoboSoft'25: The 1st International Workshop on Vision-Language in Soft Robot"
+
+description:
+- ACM Multimedia 2025 Workshop
+- October 28, 2025
+- Dublin, Ireland
+
+buttons:
+  Overview: './index.html'
+  Invited Speakers: './index.html#invited-speakers'
+  Schedule: './index.html#schedule'
+  Organizers: './index.html#organizers'
+  Call for Papers: './index.html#call-for-papers'
+  Challenge: './index.html#challenge'
+  Prizes: './index.html#prizes'
+github:
+  is_project_page: false
