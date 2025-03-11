@@ -44,18 +44,16 @@ Recent advances in multimodal learning, particularly the integration of vision a
 <style>
 .speaker-grid {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin: 20px 0;
-  overflow-x: auto;
-  padding-bottom: 15px;
   width: 100%;
 }
 .speaker {
   text-align: center;
-  min-width: 180px;
-  flex-shrink: 0;
+  width: 180px;
+  margin-bottom: 20px;
 }
 .speaker-img {
   height: 180px;
