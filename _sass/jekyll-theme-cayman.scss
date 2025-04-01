@@ -75,11 +75,11 @@ a {
   &:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #1e6bb88f;
     border-color: rgba(255, 255, 255, 0.3);
   }
 
-  + .btn {
+  +.btn {
     margin-left: 1rem;
   }
 
@@ -98,7 +98,7 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem;
 
-    + .btn {
+    +.btn {
       margin-top: 1rem;
       margin-left: 0;
     }
@@ -199,7 +199,7 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
-  
+
   kbd {
     background-color: #fafbfc;
     border: 1px solid #c6cbd1;
@@ -229,7 +229,7 @@ a {
     font-weight: normal;
     color: $section-headings-color;
   }
-  
+
   g8 {
     font-size: 3rem;
     margin-top: 2rem;
@@ -264,7 +264,7 @@ a {
     border: solid 1px $border-color;
     border-radius: 0.3rem;
 
-    > code {
+    >code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
