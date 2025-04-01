@@ -16,27 +16,33 @@ Recent advances in multimodal learning, particularly the integration of vision a
 
 <div class="speaker-grid">
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Cosimo Della Santina" class="speaker-img">
+    <img src="pics/speakers/Cosimo Della Santina.png" alt="Cosimo Della Santina" class="speaker-img">
+    <!-- https://cosimodellasantina.eu/ -->
     <p><a href="#">Cosimo Della Santina</a><br>TU Delft</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Xiang LI" class="speaker-img">
+    <img src="pics/speakers/Xiang LI.png" alt="Xiang LI" class="speaker-img">
+    <!-- https://sites.google.com/view/homepageoflixiang -->
     <p><a href="#">Xiang LI</a><br>Tsinghua University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Shuqiang Jiang" class="speaker-img">
+    <img src="pics/speakers/Shuqiang Jiang.png" alt="Shuqiang Jiang" class="speaker-img">
+    <!-- https://vipl.ict.ac.cn/homepage/sqjiang/index.html -->
     <p><a href="#">Shuqiang Jiang</a><br>Chinese Academy of Sciences</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Qin Jin" class="speaker-img">
+    <img src="pics/speakers/Qin Jin.png" alt="Qin Jin" class="speaker-img">
+    <!-- https://www.ruc-aim3.com/people.html -->
     <p><a href="#">Qin Jin</a><br>Renmin University of China</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Jiebo Luo" class="speaker-img">
+    <img src="pics/speakers/Jiebo Luo.png" alt="Jiebo Luo" class="speaker-img">
+    <!-- https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en -->
     <p><a href="#">Jiebo Luo</a><br>University of Rochester</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Mohan Kankanhalli" class="speaker-img">
+    <img src="pics/speakers/Mohan Kankanhalli.png" alt="Mohan Kankanhalli" class="speaker-img">
+    <!-- https://www.comp.nus.edu.sg/~mohan/ -->
     <p><a href="#">Mohan Kankanhalli</a><br>National University of Singapore</p>
   </div>
 </div>
@@ -218,27 +224,32 @@ We adopt four metrics to evaluate the performance:
 
 <div class="speaker-grid">
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Si Liu" class="speaker-img">
+    <img src="pics/organizers/Si Liu.png" alt="Si Liu" class="speaker-img">
     <p><a href="#">Si Liu</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Li Wen" class="speaker-img">
+    <img src="pics/organizers/Li Wen.png" alt="Li Wen" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Li Wen</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Chen Gao" class="speaker-img">
+    <img src="pics/organizers/Chen Gao.png" alt="Chen Gao" class="speaker-img">
+    <!-- https://chengaopro.github.io/ -->
     <p><a href="#">Chen Gao</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Ziyu Ren" class="speaker-img">
+    <img src="pics/organizers/Ziyu Ren.png" alt="Ziyu Ren" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Ziyu Ren</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Luting Wang" class="speaker-img">
+    <img src="pics/organizers/LuTing Wang.png" alt="Luting Wang" class="speaker-img">
+    <!-- https://scholar.google.com/citations?user=-TokIr8AAAAJ&hl=zh-CN&oi=ao -->
     <p><a href="#">Luting Wang</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Jiaqi Liu" class="speaker-img">
+    <img src="pics/organizers/Jiaqi Liu.png" alt="Jiaqi Liu" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Jiaqi Liu</a><br>Beihang University</p>
   </div>
   <div class="speaker">
@@ -246,11 +257,13 @@ We adopt four metrics to evaluate the performance:
     <p><a href="#">Heqing Yang</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Xingyu Chen" class="speaker-img">
+    <img src="pics/organizers/Xingyu Chen.png" alt="Xingyu Chen" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Xingyu Chen</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Youning Duo" class="speaker-img">
+    <img src="pics/organizers/Youning Duo.png" alt="Youning Duo" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Youning Duo</a><br>Beihang University</p>
   </div>
 </div>
