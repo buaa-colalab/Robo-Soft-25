@@ -273,12 +273,12 @@ We adopt four metrics to evaluate the performance:
   <div class="speaker">
     <img src="pics/placeholder.jpg" alt="Jiasheng Wu" class="speaker-img">
     <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
-    <p><a href="#">Li Wen</a><br>Beihang University</p>
+    <p><a href="#">Jiasheng Wu</a><br>Beihang University</p>
   </div>
   <div class="speaker">
     <img src="pics/placeholder.jpg" alt="Ruipu Wu" class="speaker-img">
     <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
-    <p><a href="#">Li Wen</a><br>Beihang University</p>
+    <p><a href="#">Ruipu Wu</a><br>Beihang University</p>
   </div>
 </div>
 
