@@ -75,6 +75,36 @@
       border-radius: 0.3rem;
       transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     }
+
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 0.3rem;
+    }
+    .dropdown-content a {
+      color: #1e6bb8;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-btn:after {
+      content: '';
+    }
   </style>
   <section class="page-header page-header1">
     <!-- <img alt="logo" src="pics/placehold-logo.svg" class = "logo" > -->
@@ -97,12 +127,34 @@
     <br>
     <br>
     <br>
-    {% for link in site.buttons %}
+    <!-- {% for link in site.buttons %}
 
     <a href="{{ link[1] }}" class="btn"
       style="color:#ffffff ; font-size: large; text-shadow: -0.1px -0.1px 0 #c911f7, 0.1px -0.1px 0 #c911f7, -0.1px 0.1px 0 #c911f7, 0.1px 0.1px 0 #c911f7;">{{
       link[0] }}</a>
-    {% endfor %}
+    {% endfor %} -->
+    <div class="nav-bar">
+      {% for item in site.nav %}
+      {% if item.subnav %}
+      <div class="dropdown" style="display:inline-block;">
+        <a href="{{ item.url }}" class="btn dropdown-btn"
+          style="color:#ffffff ; font-size: large; text-shadow: -0.1px -0.1px 0 #c911f7, 0.1px -0.1px 0 #c911f7, -0.1px 0.1px 0 #c911f7, 0.1px 0.1px 0 #c911f7;">
+          {{ item.title }} ▼
+        </a>
+        <div class="dropdown-content">
+          {% for sub in item.subnav %}
+          <a href="{{ sub.url }}" style="color:#1e6bb8; background:#fff; font-size:large;">{{ sub.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      {% else %}
+      <a href="{{ item.url }}" class="btn"
+        style="color:#ffffff ; font-size: large; text-shadow: -0.1px -0.1px 0 #c911f7, 0.1px -0.1px 0 #c911f7, -0.1px 0.1px 0 #c911f7, 0.1px 0.1px 0 #c911f7;">
+        {{ item.title }}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
 
   </section>
 

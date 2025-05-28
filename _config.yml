@@ -11,5 +11,24 @@ buttons:
   Schedule: './schedule.html'
   Call for Papers: './call4papers.html'
   Challenge: './challenge.html'
+
+
+nav:
+  - title: Overview
+    url: './index.html'
+    subnav:
+      - title: 'Overview'
+        url: './index.html#overview'
+      - title: 'Invited Speakers'
+        url: './index.html#invited-speakers'
+      - title: 'Invited Speakers'
+        url: './index.html#invited-speakers'
+  - title: Schedule
+    url: './schedule.html'
+  - title: Call for Papers
+    url: './call4papers.html'
+  - title: Challenge
+    url: './challenge.html'
+
 github:
   is_project_page: false
