@@ -40,11 +40,6 @@ Recent advances in multimodal learning, particularly the integration of vision a
     <!-- https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en -->
     <p><a href="#">Jiebo Luo</a><br>University of Rochester</p>
   </div>
-  <div class="speaker">
-    <img src="pics/speakers/Mohan Kankanhalli.png" alt="Mohan Kankanhalli" class="speaker-img">
-    <!-- https://www.comp.nus.edu.sg/~mohan/ -->
-    <p><a href="#">Mohan Kankanhalli</a><br>National University of Singapore</p>
-  </div>
 </div>
 
 <style>
@@ -220,7 +215,7 @@ We adopt four metrics to evaluate the performance:
 }
 </style>
 
-## Organizers
+## Program Committee
 
 <div class="speaker-grid">
   <div class="speaker">
@@ -253,7 +248,7 @@ We adopt four metrics to evaluate the performance:
     <p><a href="#">Jiaqi Liu</a><br>Beihang University</p>
   </div>
   <div class="speaker">
-    <img src="pics/placeholder.jpg" alt="Heqing Yang" class="speaker-img">
+    <img src="pics/organizers/Heqing Yang.jpg" alt="Heqing Yang" class="speaker-img">
     <p><a href="#">Heqing Yang</a><br>Beihang University</p>
   </div>
   <div class="speaker">
@@ -265,6 +260,25 @@ We adopt four metrics to evaluate the performance:
     <img src="pics/organizers/Youning Duo.png" alt="Youning Duo" class="speaker-img">
     <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Youning Duo</a><br>Beihang University</p>
+  </div>
+</div>
+
+## Challenge Technical Committee
+
+<div class="speaker-grid">
+  <div class="speaker">
+    <img src="pics/organizers/Ziyu Wei.jpg" alt="Ziyu Wei" class="speaker-img">
+    <p><a href="#">Ziyu Wei</a><br>Beihang University</p>
+  </div>
+  <div class="speaker">
+    <img src="pics/placeholder.jpg" alt="Jiasheng Wu" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
+    <p><a href="#">Li Wen</a><br>Beihang University</p>
+  </div>
+  <div class="speaker">
+    <img src="pics/placeholder.jpg" alt="Ruipu Wu" class="speaker-img">
+    <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
+    <p><a href="#">Li Wen</a><br>Beihang University</p>
   </div>
 </div>
 
@@ -281,11 +295,11 @@ All submissions must be original work not under review at any other workshop, co
 
 ## Important Dates
 
-- Paper submission deadline: TBD
-- Paper notification: TBD
-- Camera-ready submission: TBD
-- Challenge submission deadline: TBD
-- Workshop date: At ACM MM 2025
+- Paper submission deadline: July 11, 2025
+- Paper notification: August 1, 2025
+- Camera-ready submission: August 3, 2025
+- Challenge submission deadline: July 30, 2025
+- Workshop date: October 27–28, 2025
 
 ## Prizes
 

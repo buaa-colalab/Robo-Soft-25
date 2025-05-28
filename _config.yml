@@ -12,7 +12,7 @@ buttons:
   Schedule: './index.html#schedule'
   Organizers: './index.html#organizers'
   Call for Papers: './index.html#call-for-papers'
-  Challenge: './index.html#challenge'
+  Challenge: './challenge.html'
   Prizes: './index.html#prizes'
 github:
   is_project_page: false
