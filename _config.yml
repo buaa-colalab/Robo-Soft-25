@@ -8,11 +8,8 @@ description:
 
 buttons:
   Overview: './index.html'
-  Invited Speakers: './index.html#invited-speakers'
-  Schedule: './index.html#schedule'
-  Organizers: './index.html#organizers'
-  Call for Papers: './index.html#call-for-papers'
+  Schedule: './schedule.html'
+  Call for Papers: './call4papers.html'
   Challenge: './challenge.html'
-  Prizes: './index.html#prizes'
 github:
   is_project_page: false
