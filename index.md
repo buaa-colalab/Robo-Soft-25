@@ -31,8 +31,7 @@ Recent advances in multimodal learning, particularly the integration of vision a
     <p><a href="#">Shuqiang Jiang</a><br>Chinese Academy of Sciences</p>
   </div>
   <div class="speaker">
-    <img src="pics/speakers/Qin Jin.png" alt="Qin Jin" class="speaker-img">
-    <!-- https://www.ruc-aim3.com/people.html -->
+    <img src="pics/speakers/Qin Jin.jpg" alt="Qin Jin" class="speaker-img">
     <p><a href="#">Qin Jin</a><br>Renmin University of China</p>
   </div>
   <div class="speaker">
@@ -277,6 +276,10 @@ We adopt four metrics to evaluate the performance:
   <div class="speaker">
     <img src="pics/organizers/Hongliang Huang.jpg" alt="Hongliang Huang" class="speaker-img">
     <p><a href="#">Hongliang Huang</a><br>Beihang University</p>
+  </div>
+  <div class="speaker">
+    <img src="pics/organizers/Xudong Liu.jpg" alt="Xudong Liu" class="speaker-img">
+    <p><a href="#">Xudong Liu</a><br>Beihang University</p>
   </div>
 </div>
 
