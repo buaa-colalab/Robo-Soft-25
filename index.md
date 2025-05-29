@@ -273,7 +273,7 @@ We adopt four metrics to evaluate the performance:
   <div class="speaker">
     <img src="pics/organizers/Jiasheng Wu.jpg" alt="Jiasheng Wu" class="speaker-img">
     <p><a href="#">Jiasheng Wu</a><br>Beihang University</p>
-  </div
+  </div>
 </div>
 
 ## Call for Papers
