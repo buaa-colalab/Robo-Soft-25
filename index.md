@@ -6,11 +6,9 @@ layout: default
 
 ## Overview
 
-Natural organisms, particularly soft-bodied animals, effectively explore and interact with their environments using highly redundant structures. Inspired by nature, engineers have integrated soft materials into rigid robotic joints, leading to significant advancements in the field of soft robotics. This innovative design enables robots to bend, twist, and continuously deform along their entire length. The inherently deformable nature of soft robots provides safe and adaptive solutions, especially in applications such as human-robot collaboration, search and rescue operations, and exploration and manipulation in unstructured environments.
+The rapid development of embodied intelligence, realized through robots’ interaction with the environment, has evolved from rule-based control to autonomous systems integrating deep learning and reinforcement learning. Current research in embodied intelligence predominantly focuses on rigid robotic platforms. However, the characteristics of rigid materials not only limit flexibility and increase collision risks but also render them insufficiently adaptive in unstructured and constrained environments. To address these limitations, researchers have drawn inspiration from the biological traits of mollusks, introducing flexible materials into robotic design and advancing the field of embodied intelligence centered on soft robotic platforms. Soft robots, owing to their deformable properties, offer highly adaptive and safe solutions, particularly for human-robot collaboration scenarios and tasks in complex environments. Nevertheless, their underactuated nature and strong nonlinear dynamic characteristics pose significant challenges for the design of autonomous control systems.
 
-However, soft robots are inherently underactuated, highly nonlinear mechanical systems, immersed in an elastic potential field and subject to dissipative forces that contribute to their stability. This underactuated nature, combined with the complex dynamics, presents significant challenges in controlling soft robots. These challenges have attracted researchers from various fields, including mechanical engineering, control theory, and computer science.
-
-Recent advances in multimodal learning, particularly the integration of vision and language, offer a promising direction for improving soft robot autonomy. By leveraging vision-language models, soft robots can interpret human instructions in natural language while grounding their actions in visual perception. Therefore, this workshop focuses on multimodal soft robot planning, aiming to develop efficient control strategies that bridge the gap between high-level human intent and low-level robot execution. The ultimate goal is to enhance the adaptability and usability of soft robots in real-world applications.
+This workshop focuses on the multimodal perception and decision-making of soft robots, delving into and promoting cutting-edge technologies in embodied intelligence with soft robotics as the carrier. We aim to bring together researchers and practitioners to explore emerging challenges and solutions, including the design of adaptive control systems for soft robots, the integration of multimodal sensory data, and the optimization of decision-making algorithms under nonlinear dynamics.
 
 ## Invited Speakers
 
@@ -66,145 +64,79 @@ Recent advances in multimodal learning, particularly the integration of vision a
   font-size: 0.9em;
 }
 </style>
+## Call for Papers
 
-## Schedule
+This workshop aims to bring together researchers and practitioners from different disciplines to share ideas and methods on soft robot learning. We welcome research contributions as well as best-practice contributions on (but not limited to) the following topics:
 
-*Tentative schedule - Half-day workshop*
+- Multimodal Embodied Navigation: visual navigation, vision-language navigation, soft robot navigation
+- Multimodal Embodied Manipulation: grasping, dexterous manipulation, soft-hand manipulation, tool manipulation
+- Embodied Reasoning: spatial reasoning, affordance learning, task planning
+- Embodied Perception: multi-modal perception, active perception
+- Embodied Simulation: 2D/3D reconstruction, sim-to-real, benchmark
+- Control Methods for Soft Robots: model-based/learning-based control methods
 
+For this workshop, we accept the following type of papers：
+- 4–8 pages for the main text, plus up to 2 pages for references.
+- Topics include but are not limited to original ideas, perspectives, research visions, and open challenges in the themes outlined above.
 
-| Time | Event |
-|-------------|-------------|
-| TBD | Opening Remarks |
-| TBD | Invited Talk: Cosimo Della Santina |
-| TBD | Invited Talk: Xiang LI |
-| TBD | Invited Talk: Shuqiang Jiang |
-| TBD | Coffee Break |
-| TBD | Invited Talk: Qin Jin |
-| TBD | Invited Talk: Jiebo Luo |
-| TBD | Invited Talk: Mohan Kankanhalli |
-| TBD | Challenge Results Announcement |
-| TBD | Challenge Winner Presentations |
-| TBD | Paper Presentations |
-| TBD | Panel Discussion & Closing Remarks |
+Submission Website: https://openreview.net/group?id=acmmm.org/ACMMM/2025/Workshop/Robosoft
 
+Submission templates are available on the ACM MM 2025 website.
+
+**Submissions must adhere to the ACM MM 2025 submission policies.**
+
+<strong><span style="color: red;">The workshop will finally select a Best Paper Award.</span></strong>  
 
 ## Challenge
 
-To advance research in multimodal soft robot planning, we propose two challenge tasks:
+To advance research in multimodal soft robot planning, we propose two challenge tasks.
+
+This competition employs the open-source software Elastica developed by the Gazzola Lab at UIUC for soft-body dynamics modeling, establishing a benchmark platform for soft robot dynamics and interaction simulation. In this benchmark, soft robots are modeled as a single Cosserat rod freely moving in 3D space—serving as a flexible manipulator in Task 1 and a flexible mobile body in Task 2. The soft rod features an elastic Young's modulus of 10 MPa, exhibiting the typical bending stiffness of soft robots.
+
+The actuation mechanism is realized through internal moments distributed along the rod's length, where the continuous activation function is characterized by spline curves defined by N independent control points, approaching zero at both ends of the rod. Precise control is achieved by decomposing the overall actuation into orthogonal moment functions in the local normal, binormal (inducing bending), and orthogonal directions (inducing torsion).
 
 ### Task 1: Vision-Language Manipulation for Soft Robot
+**Vision-Language Manipulation** aims to endow soft robots with the ability to interact with objects based on human instructions and visual perception—a capability crucial for manufacturing and medical fields, encompassing scenarios such as object grasping, component assembly, item classification, and even surgical assistance. In this task, the soft robot must operate within a complex workspace containing various objects (e.g., cubes, spheres, cones). One end of the robot is fixed to a base, while the other end moves freely to accomplish manipulation tasks.
 
-In this task, a soft robot operates within a cluttered workspace containing various objects, such as cubes, spheres, and cones. One end of the soft robot is fixed to the surface, while the other end moves freely to perform manipulation. The robot receives natural language instruction and multi-perspective visual observations as inputs. The instruction specifies the objects to be manipulated and their target locations.
+The system inputs include natural language instructions (specifying the object to manipulate and its target position) and multi-view visual observations. The robot must first recognize and localize the target object from visual inputs, then execute motions to transport it to the specified position. The operation is deemed successful when the object accurately reaches the target location.
 
-<div class="figure-grid">
-  <div class="figure-item">
-    <img src="pics/1a.png" alt="Task 1 Example A" class="task-img">
-    <p class="caption">Instruction: "pick up the cone and place it in the gray area on the right side of the workspace."</p>
+<div class="video-container">
+  <div class="video-item">
+    <video controls class="side-by-side-video">
+      <source src="videos/VLM-1.mp4" type="video/mp4">
+    </video>
+    <p class="video-caption">Instruction: Move the football to the basketball</p>
   </div>
-  <div class="figure-item">
-    <img src="pics/1c.png" alt="Task 1 Example C" class="task-img">
-    <p class="caption">Instruction: "pick up the blue cylinder on the left and place it in the gray area."</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/1d.png" alt="Task 1 Example D" class="task-img">
-    <p class="caption">Instruction: "place the blue cube in the blue area and then place the green cube in the green area."</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/1b.png" alt="Task 1 Example B" class="task-img">
-    <p class="caption">Instruction: "pick up the red cube behind the tall cone and place it in the red area."</p>
+  
+  <div class="video-item">
+    <video controls class="side-by-side-video">
+      <source src="videos/VLM-2.mp4" type="video/mp4">
+    </video>
+    <p class="video-caption">Instruction: Move the smaller yellow roadblocks next to the larger roadblocks</p>
   </div>
 </div>
 
-<style>
-.figure-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15px;
-  margin: 20px 0;
-}
-.figure-item {
-  width: 45%;
-  min-width: 300px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.task-img {
-  max-width: 100%;
-  border: 1px solid #ddd;
-}
-.caption {
-  font-size: 0.9em;
-  margin-top: 8px;
-}
-</style>
-
-#### Easy-Track: Single-Object Manipulation
-In the Easy-Track, each instruction involves only one object. For example, an instruction might be: "Pick up the cone and place it in the gray area on the right side of the workspace."
-
-<div class="figure-item wider">
-  <img src="pics/3.png" alt="Task 1 Easy-Track Illustration" class="task-img">
-  <p class="caption">Illustration of Task 1 Easy-Track: The soft robot must reach the cone and place it in the target area while avoiding collision with the cube in between.</p>
-</div>
-
-#### Hard-Track: Multi-Object Manipulation
-The Hard-Track increases complexity by involving multiple objects within a single manipulation task. For example, an instruction might be: "Pick up the red cube behind the tall cone and place it in the red area."
-
-<div class="figure-item wider">
-  <img src="pics/4.png" alt="Task 1 Hard-Track Illustration" class="task-img">
-  <p class="caption">Illustration of Task 1 Hard-Track: The soft robot must first move the cone and cylinder obstacles before placing the cube in its target location.</p>
-</div>
 
 ### Task 2: Vision-Language Navigation for Soft Robot
+**Vision-Language Navigation** requires soft robots to autonomously explore complex environments by comprehending linguistic instructions and parsing visual cues. This task holds significant importance for applications such as disaster search and rescue, as well as exploration. Within this task, the agent must process synchronized multimodal inputs comprising visual observations and natural language instructions, necessitating cross-modal alignment between the vision-language modality and soft-body dynamics modeling. Instructions are translated into continuum mechanics actions.
 
-Soft robot vision-language navigation establishes a novel research field for embodied intelligence where compliant robots execute navigation tasks through morphological adaptation in dynamic environments.
+The solution space must jointly optimize semantic localization accuracy, deformation trajectory smoothness, and obstacle avoidance feasibility under time-varying boundary conditions. Vision-Language Navigation for soft robots establishes a new research domain in embodied intelligence, where soft robots execute navigation tasks through morphological adaptation in dynamic environments.
 
-<div class="figure-grid">
-  <div class="figure-item">
-    <img src="pics/task2-a.svg" alt="Task 2 Example A" class="task-img">
-    <p class="caption">Easy-Track: Navigation in sparse obstacles example</p>
+<div class="video-container">
+  <div class="video-item">
+    <video controls class="side-by-side-video">
+      <source src="videos/VLN-1.mp4" type="video/mp4">
+    </video>
+    <p class="video-caption">Instruction: Navigate to the basketball between two footballs</p>
   </div>
-  <div class="figure-item">
-    <img src="pics/task2-b.svg" alt="Task 2 Example B" class="task-img">
-    <p class="caption">Easy-Track: Different view of navigation with sparse obstacles</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/task2-c.svg" alt="Task 2 Example C" class="task-img">
-    <p class="caption">Hard-Track: Navigation in dense obstacles example</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/task2-d.svg" alt="Task 2 Example D" class="task-img">
-    <p class="caption">Hard-Track: Multiple sub-goals navigation scenario</p>
+  
+  <div class="video-item">
+    <video controls class="side-by-side-video">
+      <source src="videos/VLN-2.mp4" type="video/mp4">
+    </video>
+    <p class="video-caption">Instruction: Navigate to the football next to the yellow cone</p>
   </div>
 </div>
-
-<!-- ### Evaluation Metrics
-
-We adopt four metrics to evaluate the performance:
-
-1. **Success Rate (SR)**: Defined as the ratio of successfully completed tasks within the maximum steps.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;SR=\frac{N_{success}}{N_{total}}" alt="Success Rate Formula">
-   </p>
-
-2. **Average Collision Rate (CR)**: Measures safety performance by considering both self-collisions and environmental collisions.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;CR=\frac{1}{N_{total}}\sum_{i=1}^{N_{total}}\frac{N_{collision}^i}{N_{steps}^i}" alt="Collision Rate Formula">
-   </p>
-
-3. **Task Completion Efficiency (TCE)**: Evaluates the model efficiency using the normalized inverse steps.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;TCE=\frac{1}{N_{success}}\sum_{i=1}^{N_{success}}\frac{S_{max}-S_i}{S_{max}-S_{min}}" alt="TCE Formula">
-   </p>
-
-4. **Comprehensive Evaluation Score (CES)**: A weighted composite score incorporating the above evaluation metrics.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;CES=\alpha\cdot{SR}+\beta\cdot(1-CR)+\gamma\cdot{TCE}" alt="CES Formula">
-   </p> -->
 
 
 <style>
@@ -212,7 +144,52 @@ We adopt four metrics to evaluate the performance:
   width: 90%;
   margin: 20px auto;
 }
+.video-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-by-side-video {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.video-caption {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: left;
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+  }
+  .video-caption {
+    font-size: 0.8rem;
+  }
+}
 </style>
+
+## Important Dates
+
+- Paper submission deadline: July 11, 2025
+- Paper notification: August 1, 2025
+- Camera-ready submission: August 3, 2025
+- Challenge submission deadline: July 30, 2025
+- Workshop date: October 27–28, 2025
+
 
 ## Program Committee
 
@@ -278,30 +255,6 @@ We adopt four metrics to evaluate the performance:
     <p><a href="#">Xudong Liu</a><br>Beihang University</p>
   </div>
 </div>
-
-## Call for Papers
-
-This workshop aims to bring together researchers and practitioners from different disciplines to share ideas and methods on soft robot learning. We welcome research contributions as well as best-practice contributions on (but not limited to) the following topics:
-
-- Multimodal robot manipulation in constrained environments.
-- Multimodal navigation with mobile robots.
-- Learning-based paradigms for soft robot control.
-- Multimodal perception and modeling for soft-bodied robots.
-
-All submissions must be original work not under review at any other workshop, conference, or journal. The workshop will accept papers describing completed work as well as work in progress. One submission format is accepted: full paper, which must follow the formatting guidelines of the main conference ACM MM 2025.
-
-## Important Dates
-
-- Paper submission deadline: July 11, 2025
-- Paper notification: August 1, 2025
-- Camera-ready submission: August 3, 2025
-- Challenge submission deadline: July 30, 2025
-- Workshop date: October 27–28, 2025
-
-## Prizes
-
-- Prizes for each track winner
-- Best paper award
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">

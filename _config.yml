@@ -17,22 +17,18 @@ nav:
   - title: Overview
     url: './index.html'
     subnav:
-      - title: 'Overview'
-        url: './index.html#overview'
       - title: 'Invited Speakers'
         url: './index.html#invited-speakers'
+      - title: 'Call for Papers'
+        url: './index.html#call-for-papers'
       - title: 'Challenge'
         url: './index.html#challenge'
+      - title: 'Important Dates'
+        url: './index.html#important-dates'
       - title: 'Program Committee'
         url: './index.html#program-committee'
       - title: 'Challenge Technical Committee'
         url: './index.html#challenge-technical-committee'
-      - title: 'Call for Papers'
-        url: './index.html#call-for-papers'
-      - title: 'Important Dates'
-        url: './index.html#important-dates'
-      - title: 'Prizes'
-        url: './index.html#prizes'
       
   - title: Schedule
     url: './schedule.html'
