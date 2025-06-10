@@ -2,128 +2,183 @@
 layout: default
 ---
 
-## Challenge
+## Leaderboard
 
-To advance research in multimodal soft robot planning, we propose two challenge tasks:
+**Registration**: 
+You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAIpQLSfB8juyzKzP6jKH_FEaU1uvsNvvtUHRSvgDkfoKe7vgLzBywA/viewform?usp=dialog).
+
+**Submission**: You may submit your docker images [here](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
+>Note: If multiple submissions are made, the latest one shall prevail.
+
+Here are the current leaderboards:
+<div style="display: flex; gap: 16px; align-items: flex-start;">
+
+  <div style="width:49%;">
+    <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLM</div>
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/1QRTUDAcGOv6kDBAQN0d4H0p4IbPvn5wvbKWEoUmuu2k/pubhtml?gid=0&single=true&widget=true&headers=false"
+      width="100%"
+      height="400">
+    </iframe>
+  </div>
+
+  <div style="width:49%;">
+    <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLN</div>
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/1CtJTRikpIplv1VckM93b-oLxqzZOAqNZaXTZieILyWo/pubhtml?gid=0&single=true&widget=true&headers=false"
+      width="100%"
+      height="400">
+    </iframe>
+  </div>
+
+</div>
+
+*The above tables are updated every two days.
+
+## Data Details
 
 ### Task 1: Vision-Language Manipulation for Soft Robot
 
-In this task, a soft robot operates within a cluttered workspace containing various objects, such as cubes, spheres, and cones. One end of the soft robot is fixed to the surface, while the other end moves freely to perform manipulation. The robot receives natural language instruction and multi-perspective visual observations as inputs. The instruction specifies the objects to be manipulated and their target locations.
+<a href="#" class="btn" style="margin-bottom:10px;">Download VLM data</a>
 
-<div class="figure-grid">
-  <div class="figure-item">
-    <img src="pics/1a.png" alt="Task 1 Example A" class="task-img">
-    <p class="caption">Instruction: "pick up the cone and place it in the gray area on the right side of the workspace."</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/1c.png" alt="Task 1 Example C" class="task-img">
-    <p class="caption">Instruction: "pick up the blue cylinder on the left and place it in the gray area."</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/1d.png" alt="Task 1 Example D" class="task-img">
-    <p class="caption">Instruction: "place the blue cube in the blue area and then place the green cube in the green area."</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/1b.png" alt="Task 1 Example B" class="task-img">
-    <p class="caption">Instruction: "pick up the red cube behind the tall cone and place it in the red area."</p>
-  </div>
-</div>
-
-<style>
-.figure-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15px;
-  margin: 20px 0;
-}
-.figure-item {
-  width: 45%;
-  min-width: 300px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.task-img {
-  max-width: 100%;
-  border: 1px solid #ddd;
-}
-.caption {
-  font-size: 0.9em;
-  margin-top: 8px;
-}
-</style>
-
-#### Easy-Track: Single-Object Manipulation
-In the Easy-Track, each instruction involves only one object. For example, an instruction might be: "Pick up the cone and place it in the gray area on the right side of the workspace."
-
-<div class="figure-item wider">
-  <img src="pics/3.png" alt="Task 1 Easy-Track Illustration" class="task-img">
-  <p class="caption">Illustration of Task 1 Easy-Track: The soft robot must reach the cone and place it in the target area while avoiding collision with the cube in between.</p>
-</div>
-
-#### Hard-Track: Multi-Object Manipulation
-The Hard-Track increases complexity by involving multiple objects within a single manipulation task. For example, an instruction might be: "Pick up the red cube behind the tall cone and place it in the red area."
-
-<div class="figure-item wider">
-  <img src="pics/4.png" alt="Task 1 Hard-Track Illustration" class="task-img">
-  <p class="caption">Illustration of Task 1 Hard-Track: The soft robot must first move the cone and cylinder obstacles before placing the cube in its target location.</p>
-</div>
 
 ### Task 2: Vision-Language Navigation for Soft Robot
 
-Soft robot vision-language navigation establishes a novel research field for embodied intelligence where compliant robots execute navigation tasks through morphological adaptation in dynamic environments.
+<a href="#" class="btn" style="margin-bottom:10px;">Download VLN data</a>
 
-<div class="figure-grid">
-  <div class="figure-item">
-    <img src="pics/task2-a.svg" alt="Task 2 Example A" class="task-img">
-    <p class="caption">Easy-Track: Navigation in sparse obstacles example</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/task2-b.svg" alt="Task 2 Example B" class="task-img">
-    <p class="caption">Easy-Track: Different view of navigation with sparse obstacles</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/task2-c.svg" alt="Task 2 Example C" class="task-img">
-    <p class="caption">Hard-Track: Navigation in dense obstacles example</p>
-  </div>
-  <div class="figure-item">
-    <img src="pics/task2-d.svg" alt="Task 2 Example D" class="task-img">
-    <p class="caption">Hard-Track: Multiple sub-goals navigation scenario</p>
-  </div>
-</div>
+The data directory structure is as follows:
+```plaintext
+release
+├── annotations.json
+├── scenarios
+│   ├── 0
+│   │   └── config.yaml
+│   ├── ...
+│   └── 99
+└── trajectories
+    ├── 0
+    │   ├── actions.json
+    │   ├── state_action.pkl
+    │   └── visual
+    │       ├── step_00000.png
+    │       ├── step_00001.png
+    │       └── ...
+    ├── ...
+    └── 99
+```
 
-<!-- ### Evaluation Metrics
+`scenarios` directory stores the environmental configurations.
 
-We adopt four metrics to evaluate the performance:
+`trajectories` directory stores data annotations corresponding to each piece of data, with folders named by the data's id. 
 
-1. **Success Rate (SR)**: Defined as the ratio of successfully completed tasks within the maximum steps.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;SR=\frac{N_{success}}{N_{total}}" alt="Success Rate Formula">
-   </p>
+`visual` directory stores visualization renderings of the task process from top-down view. The visualizations provided in the dataset are rendered every 1333 simulation time steps (i.e., 1333 time steps between two frames). For more fine-grained visualization, users can render independently. 
 
-2. **Average Collision Rate (CR)**: Measures safety performance by considering both self-collisions and environmental collisions.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;CR=\frac{1}{N_{total}}\sum_{i=1}^{N_{total}}\frac{N_{collision}^i}{N_{steps}^i}" alt="Collision Rate Formula">
-   </p>
+**File Details**
 
-3. **Task Completion Efficiency (TCE)**: Evaluates the model efficiency using the normalized inverse steps.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;TCE=\frac{1}{N_{success}}\sum_{i=1}^{N_{success}}\frac{S_{max}-S_i}{S_{max}-S_{min}}" alt="TCE Formula">
-   </p>
+`config.yaml` contains configuration information for the simulation environment.
+<details>
+<summary>Example</summary>
 
-4. **Comprehensive Evaluation Score (CES)**: A weighted composite score incorporating the above evaluation metrics.
-   
-   <p align="center">
-     <img src="https://latex.codecogs.com/svg.latex?\Large&space;CES=\alpha\cdot{SR}+\beta\cdot(1-CR)+\gamma\cdot{TCE}" alt="CES Formula">
-   </p> -->
+```yaml
+objects:
+- center:
+  - 0.4863890172516796
+  - 0.2153593989325976
+  - 3.1806980291836973
+  color: ''
+  mesh_path: ./assets/cylinder.stl
+  scale:
+  - 0.215
+  - 0.215
+  - 0.215
+  shape: cylinder
+  type: mesh_surface
+- center:
+  - 2.8291035111323892
+  - 0.23340298631651013
+  - 4.21278268891604
+  density: 1.0
+  radius: 0.23340298631651013
+  type: sphere
 
+rod:
+  base_length: 0.5
+  base_radius: 0.025
+  density: 1000
+  direction:
+  - 0.0
+  - 0.0
+  - 1.0
+  n_elem: 20
+  normal:
+  - 0.0
+  - 1.0
+  - 0.0
+  poisson_ratio: 0.5
+  start:
+  - 0.0
+  - 0.0
+  - 0.0
+  youngs_modulus: 10000000
+simulator:
+  collect_data: true
+  final_time: 10.0
+  rendering_fps: 15
+  time_step: 5.0e-05
+  update_interval: 1
+```
+</details>
 
-<style>
-.wider {
-  width: 90%;
-  margin: 20px auto;
-}
-</style>
+| Keyword   | Meaning                                                                                                                                                                  |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| objects   | Configurations for all objects in the environment except the soft robot, including basic types such as sphere and mesh surface.                                          |
+| rod       | Configuration for the Cosserat rod simulating the soft robot; parameters are not recommended to be modified.                                                             |
+| simulator | Simulator-related configurations. The maximum simulation duration can be adjusted by modifying the final_time field; other parameters are not recommended to be changed. |
+
+`annotations.json` contains all annotation information.
+<details>
+<summary>Example</summary>
+
+```json
+[
+    {
+        "id": 0,
+        "target_id": 10,
+        "description": "Explore the environment and find: indigo hemisphere, remember to carefully cross any potential obstacles."
+    },
+    {
+        "id": 1,
+        "target_id": 10,
+        "description": "Navigate to: red cone, ensuring you avoid all obstacles to arrive safely."
+    }
+]
+```
+</details>
+
+| Keyword     | Meaning                                                                                                                                                      |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id          | The data serial number. The corresponding environmental configuration and data annotations are in subfolders named by the id within the trajectories folder. |
+| target_id   | The serial number of the target object in the environment, mainly used for simulation environment construction.                                              |
+| instruction | Text guidance for the task. |
+
+`state_actions.pkl` stores data annotations of actions executed and the soft robot's state for completing the current task.
+| Keyword     | Meaning  |
+| ----------- | --------------------|
+| rod_time    | (n_time_steps, ), recording the time instants corresponding to the rod's positions. |
+| torque_time | (n_time_steps, ), recording the time instants of applied torques.  |
+| position    | (n_time_steps, 3, n_elem+1), position information of the rod at each time step. 3 denotes the number of spatial coordinates, and n_elem is the total number of rod segments (details can be found in Cosserat rod simulation methods). Positions record the start and end positions of each segment rather than the center, hence the third dimension is n_elem+1 instead of n_elem. |
+| velocity    | (n_time_steps, 3, n_elem+1), velocity information of the rod at each time step, with each dimension defined as above. |
+
+## Development Toolkit
+
+During this workshop, we provide a base Docker image for participants to set up their environment. The image is pre-configured with dependencies for Elastica and PyTorch, and can be obtained via the link: TBD
+
+To build base environment container, you can follow the steps below:
+```
+docker pull <images>
+docker run -v <data_path>:/app/data -d --name <name> -it <images> /bin/bash
+```
+
+Participants are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
+
+Specifically, we will mount the test data into the container directory `/app/data` via `docker run -v`, so **please ensure the `/app/data` directory in the image is empty.**

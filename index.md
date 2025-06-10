@@ -250,10 +250,6 @@ The solution space must jointly optimize semantic localization accuracy, deforma
     <img src="pics/organizers/Hongliang Huang.jpg" alt="Hongliang Huang" class="speaker-img">
     <p><a href="#">Hongliang Huang</a><br>Beihang University</p>
   </div>
-  <div class="speaker">
-    <img src="pics/organizers/Xudong Liu.jpg" alt="Xudong Liu" class="speaker-img">
-    <p><a href="#">Xudong Liu</a><br>Beihang University</p>
-  </div>
 </div>
 
 <!-- KaTeX -->
