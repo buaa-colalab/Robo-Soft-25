@@ -16,7 +16,7 @@ Here are the current leaderboards:
   <div style="width:49%;">
     <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLM</div>
     <iframe
-      src="https://docs.google.com/spreadsheets/d/1QRTUDAcGOv6kDBAQN0d4H0p4IbPvn5wvbKWEoUmuu2k/pubhtml?gid=0&single=true&widget=true&headers=false"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxMVn-R-tdqepDwJubsEkfj8WEwa8yvFSulfPrI-2w5JVhW6EApiEAIMSniS7TLbINwGjLPpLBd4dT/pubhtml?gid=0&single=true"
       width="100%"
       height="400">
     </iframe>
@@ -25,7 +25,7 @@ Here are the current leaderboards:
   <div style="width:49%;">
     <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLN</div>
     <iframe
-      src="https://docs.google.com/spreadsheets/d/1CtJTRikpIplv1VckM93b-oLxqzZOAqNZaXTZieILyWo/pubhtml?gid=0&single=true&widget=true&headers=false"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcPoNHvEU0nygRiqd1oKi-mX6NAsFxiR-28oLW-3KeNsgQIydgC4Jx3gYF3UsBUidxqlAf9wYjCUAj/pubhtml?gid=0&single=true"
       width="100%"
       height="400">
     </iframe>
