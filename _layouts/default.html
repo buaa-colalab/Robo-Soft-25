@@ -143,13 +143,13 @@
         </a>
         <div class="dropdown-content">
           {% for sub in item.subnav %}
-          <a href="{{ sub.url }}" style="color:#1e6bb8; background:#fff; font-size:large;">{{ sub.title }}</a>
+          <a href="{{ sub.url }}" style="color:#1e6bb8; background:#fff; font-size:medium;">{{ sub.title }}</a>
           {% endfor %}
         </div>
       </div>
       {% else %}
-      <a href="{{ item.url }}" class="btn"
-        style="color:#ffffff ; font-size: medium;">
+      <a href="{{ item.url }}" class="btn dropdown-btn"
+        style="color:#ffffff ; font-size: large;">
         {{ item.title }}
       </a>
       {% endif %}
