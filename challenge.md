@@ -39,12 +39,12 @@ Here are the current leaderboards:
 
 ### Task 1: Vision-Language Manipulation for Soft Robot
 
-<a href="#" class="btn" style="margin-bottom:10px;">Download VLM data</a>
+[Download VLM data]()
 
 
 ### Task 2: Vision-Language Navigation for Soft Robot
 
-<a href="#" class="btn" style="margin-bottom:10px;">Download VLN data</a>
+[Download VLN data]()
 
 The data directory structure is as follows:
 ```plaintext
@@ -77,7 +77,7 @@ release
 
 `config.yaml` contains configuration information for the simulation environment.
 <details>
-<summary>Example</summary>
+<summary class="example-btn">Example</summary>
 
 <pre><code class="language-yaml">
 objects:
@@ -138,7 +138,7 @@ simulator:
 `annotations.json` contains all annotation information.
 
 <details>
-<summary>Example</summary>
+<summary class="example-btn">Example</summary>
 
 <pre><code class="language-json">[
     {
@@ -169,6 +169,23 @@ simulator:
 | torque_time | (n_time_steps, ), recording the time instants of applied torques.  |
 | position    | (n_time_steps, 3, n_elem+1), position information of the rod at each time step. 3 denotes the number of spatial coordinates, and n_elem is the total number of rod segments (details can be found in Cosserat rod simulation methods). Positions record the start and end positions of each segment rather than the center, hence the third dimension is n_elem+1 instead of n_elem. |
 | velocity    | (n_time_steps, 3, n_elem+1), velocity information of the rod at each time step, with each dimension defined as above. |
+
+<style>
+.example-btn {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+details[open] .example-btn {
+  background: #005a9e;
+}
+</style>
 
 ## Development Toolkit
 
