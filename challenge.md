@@ -79,7 +79,7 @@ release
 <details>
 <summary>Example</summary>
 
-```yaml
+<pre><code class="language-yaml">
 objects:
 - center:
   - 0.4863890172516796
@@ -126,7 +126,7 @@ simulator:
   rendering_fps: 15
   time_step: 5.0e-05
   update_interval: 1
-```
+</code></pre>
 </details>
 
 | Keyword   | Meaning                                                                                                                                                                  |
@@ -136,11 +136,11 @@ simulator:
 | simulator | Simulator-related configurations. The maximum simulation duration can be adjusted by modifying the final_time field; other parameters are not recommended to be changed. |
 
 `annotations.json` contains all annotation information.
+
 <details>
 <summary>Example</summary>
 
-```json
-[
+<pre><code class="language-json">[
     {
         "id": 0,
         "target_id": 10,
@@ -152,16 +152,17 @@ simulator:
         "description": "Navigate to: red cone, ensuring you avoid all obstacles to arrive safely."
     }
 ]
-```
+</code></pre>
 </details>
 
-| Keyword     | Meaning                                                                                                                                                      |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Keyword     | Meaning |
+| ----------- | ---------|
 | id          | The data serial number. The corresponding environmental configuration and data annotations are in subfolders named by the id within the trajectories folder. |
-| target_id   | The serial number of the target object in the environment, mainly used for simulation environment construction.                                              |
+| target_id   | The serial number of the target object in the environment, mainly used for simulation environment construction.|
 | instruction | Text guidance for the task. |
 
 `state_actions.pkl` stores data annotations of actions executed and the soft robot's state for completing the current task.
+
 | Keyword     | Meaning  |
 | ----------- | --------------------|
 | rod_time    | (n_time_steps, ), recording the time instants corresponding to the rod's positions. |
@@ -182,3 +183,10 @@ docker run -v <data_path>:/app/data -d --name <name> -it <images> /bin/bash
 Participants are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
 
 Specifically, we will mount the test data into the container directory `/app/data` via `docker run -v`, so **please ensure the `/app/data` directory in the image is empty.**
+
+<style>
+details summary {
+  list-style: revert;
+  cursor: pointer;
+}
+</style>
