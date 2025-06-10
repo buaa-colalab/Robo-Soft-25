@@ -79,8 +79,7 @@ release
 <details>
 <summary class="example-btn">Example</summary>
 
-<pre><code class="language-yaml">
-objects:
+<pre><code class="language-yaml">objects:
 - center:
   - 0.4863890172516796
   - 0.2153593989325976
@@ -174,13 +173,14 @@ simulator:
 .example-btn {
   display: inline-block;
   padding: 4px 12px;
-  background: #007acc;
+  background: #1e6bb8;
   color: #fff;
   border: none;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
+  margin-bottom: 10px;
 }
 details[open] .example-btn {
   background: #005a9e;
