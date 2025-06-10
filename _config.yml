@@ -36,6 +36,13 @@ nav:
     url: './call4papers.html'
   - title: Challenge
     url: './challenge.html'
+    subnav:
+      - title: 'Leaderboard'
+        url: './challenge.html#leaderboard'
+      - title: 'Data Details'
+        url: './challenge.html#data-details'
+      - title: 'Development Toolkit'
+        url: './challenge.html#development-toolkit'
 
 github:
   is_project_page: false
