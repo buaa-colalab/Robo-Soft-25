@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: "RoboSoft'25: The 1st International Workshop on Vision-Language in Soft Robot"
-
+highlighter: rouge
 description:
 - ACM Multimedia 2025 Workshop
 - October 28, 2025
