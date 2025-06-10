@@ -10,28 +10,50 @@ You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAI
 **Submission**: You may submit your docker images [here](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
 >Note: If multiple submissions are made, the latest one shall prevail.
 
-Here are the current leaderboards:
-<div style="display: flex; gap: 16px; align-items: flex-start;">
-
-  <div style="width:49%;">
-    <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLM</div>
-    <iframe
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxMVn-R-tdqepDwJubsEkfj8WEwa8yvFSulfPrI-2w5JVhW6EApiEAIMSniS7TLbINwGjLPpLBd4dT/pubhtml?gid=0&single=true"
-      width="100%"
-      height="400">
-    </iframe>
-  </div>
-
-  <div style="width:49%;">
-    <div style="text-align:center; font-weight:bold; margin-bottom:4px;">VLN</div>
-    <iframe
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcPoNHvEU0nygRiqd1oKi-mX6NAsFxiR-28oLW-3KeNsgQIydgC4Jx3gYF3UsBUidxqlAf9wYjCUAj/pubhtml?gid=0&single=true"
-      width="100%"
-      height="400">
-    </iframe>
-  </div>
-
-</div>
+<table>
+  <tr>
+    <td>
+      <table>
+        <caption><b>VLM</b></caption>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Submission Time</th>
+        </tr>
+        <tr>
+          <td>Team A</td>
+          <td>95</td>
+          <td>xxxx-xx-xx xx:xx:xx</td>
+        </tr>
+        <tr>
+          <td>Team B</td>
+          <td>90</td>
+          <td>xxxx-xx-xx xx:xx:xx</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding-left:40px">
+      <table>
+        <caption><b>VLN</b></caption>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Submission Time</th>
+        </tr>
+        <tr>
+          <td>Team A</td>
+          <td>1:20</td>
+          <td>xxxx-xx-xx xx:xx:xx</td>
+        </tr>
+        <tr>
+          <td>Team B</td>
+          <td>1:35</td>
+          <td>xxxx-xx-xx xx:xx:xx</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 *The above tables are updated every two days.
 
