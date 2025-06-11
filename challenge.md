@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- # RoboSoft'25: The 1st International Workshop on Vision-Language in Soft Robot -->
+
 ## Leaderboard
 
 **Registration**: 
