@@ -7,9 +7,9 @@ layout: default
 ## Leaderboard
 
 **Registration**: 
-You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAIpQLSfB8juyzKzP6jKH_FEaU1uvsNvvtUHRSvgDkfoKe7vgLzBywA/viewform?usp=dialog).
+All teams wishing to participate and obtain official eligibility must register [here](https://docs.google.com/forms/d/e/1FAIpQLSfB8juyzKzP6jKH_FEaU1uvsNvvtUHRSvgDkfoKe7vgLzBywA/viewform?usp=dialog), and may update team member information afterward. 
 
-**Submission**: You may submit your docker images [here](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
+**Submission**: All teams may submit docker images [here](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
 >Note: If multiple submissions are made, the latest one shall prevail.
 
 <table>
@@ -18,19 +18,34 @@ You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAI
       <table>
         <caption><b>VLM</b></caption>
         <tr>
-          <th>Name</th>
+          <th>Team ID</th>
           <th>Score</th>
-          <th>Submission Time</th>
+          <th>Submit Time</th>
         </tr>
         <tr>
-          <td>Team A</td>
-          <td>95</td>
-          <td>xxxx-xx-xx xx:xx:xx</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
-          <td>Team B</td>
-          <td>90</td>
-          <td>xxxx-xx-xx xx:xx:xx</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
       </table>
     </td>
@@ -38,19 +53,34 @@ You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAI
       <table>
         <caption><b>VLN</b></caption>
         <tr>
-          <th>Name</th>
+          <th>Team ID</th>
           <th>Score</th>
-          <th>Submission Time</th>
+          <th>Submit Time</th>
         </tr>
         <tr>
-          <td>Team A</td>
-          <td>1:20</td>
-          <td>xxxx-xx-xx xx:xx:xx</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
-          <td>Team B</td>
-          <td>1:35</td>
-          <td>xxxx-xx-xx xx:xx:xx</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
       </table>
     </td>
@@ -63,12 +93,12 @@ You may register for this workshop [here](https://docs.google.com/forms/d/e/1FAI
 
 ### Task 1: Vision-Language Manipulation for Soft Robot
 
-[Download VLM data]()
+[Download VLM data]() (Estimated Availability Time: June 13th)
 
 
 ### Task 2: Vision-Language Navigation for Soft Robot
 
-[Download VLN data]()
+[Download VLN data]() (Estimated Availability Time: June 13th)
 
 The data directory structure is as follows:
 ```plaintext
@@ -213,7 +243,7 @@ details[open] .example-btn {
 
 ## Development Toolkit
 
-During this workshop, we provide a base Docker image for participants to set up their environment. The image is pre-configured with dependencies for Elastica and PyTorch, and can be obtained via the link: TBD
+During this workshop, we provide a base Docker image for teams to set up environment. The image is pre-configured with dependencies for Elastica and PyTorch, and can be obtained via the link: TBD (Estimated Availability Time: June 13th)
 
 To build base environment container, you can follow the steps below:
 ```
@@ -221,7 +251,7 @@ docker pull <images>
 docker run -v <data_path>:/app/data -d --name <name> -it <images> /bin/bash
 ```
 
-Participants are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
+Teams are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
 
 Specifically, we will mount the test data into the container directory `/app/data` via `docker run -v`, so **please ensure the `/app/data` directory in the image is empty.**
 

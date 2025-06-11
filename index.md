@@ -79,7 +79,7 @@ For this workshop, we accept the following type of papers：
 - 4–8 pages for the main text, plus up to 2 pages for references.
 - Topics include but are not limited to original ideas, perspectives, research visions, and open challenges in the themes outlined above.
 
-Submission Website: https://openreview.net/group?id=acmmm.org/ACMMM/2025/Workshop/Robosoft
+Submission Website: https://openreview.net/group?id=acmmm.org%2FACMMM%2F2025%2FWorkshop%2FRoboSoft#tab-your-consoles
 
 Submission templates are available on the ACM MM 2025 website.
 
