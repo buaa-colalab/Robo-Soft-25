@@ -91,12 +91,7 @@ All teams wishing to participate and obtain official eligibility must register [
 
 ## Data Details
 
-### Task 1: Vision-Language Manipulation for Soft Robot
-
 [Download VLM data]() (Estimated Availability Time: June 13th)
-
-
-### Task 2: Vision-Language Navigation for Soft Robot
 
 [Download VLN data]() (Estimated Availability Time: June 13th)
 
@@ -254,6 +249,14 @@ docker run -v <data_path>:/app/data -d --name <name> -it <images> /bin/bash
 Teams are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
 
 Specifically, we will mount the test data into the container directory `/app/data` via `docker run -v`, so **please ensure the `/app/data` directory in the image is empty.**
+
+After mounting, the following directory structure will be obtained. Teams should maintain the file layout and complete the task based on this structure.
+
+```plaintext
+/app/data
+├── VLN
+└── VLM
+```
 
 <style>
 details summary {
