@@ -106,7 +106,7 @@ release
 │   └── 99
 └── trajectories
     ├── 0
-    │   ├── actions.json
+    │   ├── actions.json (only exists for VLN tasks)
     │   ├── state_action.pkl
     │   └── visual
     │       ├── step_00000.png
@@ -217,6 +217,15 @@ simulator:
 | torque_time | (n_time_steps, ), recording the time instants of applied torques.  |
 | position    | (n_time_steps, 3, n_elem+1), position information of the rod at each time step. 3 denotes the number of spatial coordinates, and n_elem is the total number of rod segments (details can be found in Cosserat rod simulation methods). Positions record the start and end positions of each segment rather than the center, hence the third dimension is n_elem+1 instead of n_elem. |
 | velocity    | (n_time_steps, 3, n_elem+1), velocity information of the rod at each time step, with each dimension defined as above. |
+
+For VLN, we have encapsulated higher-level atomic actions (i.e., move forward, turn left, turn right) and map these actions to torques for control. The atomic actions taken to complete the task in `actions.json` are formatted as `timestep: action_type`. For time steps not explicitly specified, the action from the nearest specified time step is maintained. The torques corresponding to these atomic actions are exactly the torques recorded in state_actions.pkl.
+
+<details>
+<summary class="example-btn">Example</summary>
+
+<pre><code class="language-json">{"9000": 1, "43000": 2, "49000": 1}
+</code></pre>
+</details>
 
 <style>
 .example-btn {
