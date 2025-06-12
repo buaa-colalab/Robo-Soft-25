@@ -188,7 +188,23 @@ simulator:
 <details>
 <summary class="example-btn">Example</summary>
 
-<pre><code class="language-json">[
+<pre><code class="language-json">// VLM
+[
+    {
+        "id": 0,
+        "target_object_id": 5,
+        "target_position_id": 6,
+        "instruction": "Pick up the basketball and place it in the gray zone."
+    },
+    {
+        "id": 1,
+        "target_object_id": 5,
+        "target_position_id": 6,
+        "instruction": "Pick up the red book and place it in the gray zone."
+    }
+]
+// VLN
+[
     {
         "id": 0,
         "target_id": 10,
@@ -200,13 +216,16 @@ simulator:
         "description": "Navigate to: red cone, ensuring you avoid all obstacles to arrive safely."
     }
 ]
+
 </code></pre>
 </details>
 
 | Keyword     | Meaning |
 | ----------- | ---------|
-| id          | The data serial number. The corresponding environmental configuration and data annotations are in subfolders named by the id within the trajectories folder. |
-| target_id   | The serial number of the target object in the environment, mainly used for simulation environment construction.|
+| id          | The data id. The corresponding environmental configuration and data annotations are in subfolders named by the id within the trajectories folder. |
+| target_id   | (VLN) ID of the target object in the environment.|
+| target_object_id   | (VLM) ID of the target object in the environment.|
+| target_position_id   | (VLM) ID of the target position in the environment, mainly used for simulation environment construction.|
 | instruction | Text guidance for the task. |
 
 `state_actions.pkl` stores data annotations of actions executed and the soft robot's state for completing the current task.
