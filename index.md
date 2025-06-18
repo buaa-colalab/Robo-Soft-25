@@ -185,9 +185,9 @@ The solution space must jointly optimize semantic localization accuracy, deforma
 ## Important Dates
 
 - Paper submission deadline: July 11, 2025
-- Paper notification: August 1, 2025
-- Camera-ready submission: August 3, 2025
 - Challenge submission deadline: July 30, 2025
+- Paper notification: August 1, 2025
+- Camera-ready submission: August 11, 2025
 - Workshop date: October 27–28, 2025
 
 
