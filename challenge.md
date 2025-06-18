@@ -7,85 +7,91 @@ layout: default
 ## Leaderboard
 
 **Registration**: 
-All teams wishing to participate and obtain official eligibility must register [here](https://docs.google.com/forms/d/e/1FAIpQLSfB8juyzKzP6jKH_FEaU1uvsNvvtUHRSvgDkfoKe7vgLzBywA/viewform?usp=dialog), and may update team member information afterward. 
+All teams wishing to participate and obtain official eligibility must register [**here**](https://docs.google.com/forms/d/e/1FAIpQLSfB8juyzKzP6jKH_FEaU1uvsNvvtUHRSvgDkfoKe7vgLzBywA/viewform?usp=dialog), and may update team member information afterward. 
 
-**Submission**: All teams may submit docker images [here](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
->Note: If multiple submissions are made, the latest one shall prevail.
+**Submission**: All teams may submit docker images [**here**](https://docs.google.com/forms/d/e/1FAIpQLSf6Nyh0vGb96X2tio6RIXlFlZ0eD95sv6HYVG9OAd411RxCzw/viewform?usp=header).
+>Note: If multiple submissions are made, the **best** one shall prevail.
 
 <table>
-  <tr>
-    <td>
-      <table>
-        <caption><b>VLM</b></caption>
-        <tr>
-          <th>Team ID</th>
-          <th>Score</th>
-          <th>Submit Time</th>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-      </table>
-    </td>
-    <td style="padding-left:40px">
-      <table>
-        <caption><b>VLN</b></caption>
-        <tr>
-          <th>Team ID</th>
-          <th>Score</th>
-          <th>Submit Time</th>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+    <caption><b>VLM</b></caption>
+    <tr>
+      <th>Team ID</th>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Submit Time</th>
+    </tr>
+    <tr>
+      <td>4c1593</td>
+      <td>SoftVisioBots</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
 </table>
+
+<table>
+    <caption><b>VLN</b></caption>
+    <tr>
+      <th>Team ID</th>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Submit Time</th>
+    </tr>
+    <tr>
+      <td>4c1593</td>
+      <td>SoftVisioBots</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+</table>
+
 
 *The above tables are updated every two days.
 
