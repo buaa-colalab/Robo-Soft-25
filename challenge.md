@@ -289,7 +289,11 @@ After mounting, the following directory structure will be obtained. Teams should
 ```plaintext
 /app/data
 ├── VLN
+│   ├── ...
+│   └── annotations.json
 └── VLM
+    ├── ...
+    └── annotations.json
 ```
 
 <style>
