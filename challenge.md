@@ -97,9 +97,9 @@ All teams wishing to participate and obtain official eligibility must register [
 
 ## Data Details
 
-[Download VLM data]() (Estimated Availability Time: June 13th)
+[**Download VLM data**](https://openxlab.org.cn/datasets/JobsWei/RoboSoft2025-VLM)
 
-[Download VLN data]() (Estimated Availability Time: June 13th)
+[**Download VLN data**](https://openxlab.org.cn/datasets/JobsWei/RoboSoft2025-VLN)
 
 The data directory structure is as follows:
 ```plaintext
