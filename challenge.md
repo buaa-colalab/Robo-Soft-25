@@ -103,7 +103,7 @@ All teams wishing to participate and obtain official eligibility must register [
 
 The data directory structure is as follows:
 ```plaintext
-release
+train
 ├── annotations.json
 ├── scenarios
 │   ├── 0
