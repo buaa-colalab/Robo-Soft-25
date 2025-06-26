@@ -58,8 +58,6 @@
       background-size: cover;
       background-position: center;
       padding-bottom: 1rem;
-      background-blend-mode: multiply;
-      background-color: rgba(17, 23, 29, .1);
     }
 
     .page-header1::before {
@@ -69,8 +67,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-      /* 可根据需要调整颜色和透明度 */
+      background: rgba(0, 0, 0, 0.46);
       z-index: 0;
       pointer-events: none;
       border-radius: inherit;
@@ -89,10 +86,10 @@
     .btn {
       display: inline-block;
       margin-bottom: 1rem;
-      background-color: #1e6bb8;
+      background-color: rgb(56 117 246 / 100%);
       border-style: solid;
-      border-width: 1px;
-      border-radius: 0.3rem;
+      border-width: 2px;
+      border-radius: 0.6rem;
       transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     }
 
@@ -129,10 +126,10 @@
   <section class="page-header page-header1">
     <!-- <img alt="logo" src="pics/placehold-logo.svg" class = "logo" > -->
     <h1 class="project-name"
-      style="color: #1e6bb8;text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;">
+      style="color: #ffffff;">
       {{ site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline"
-      style="font-size: 32px; color:#1e6bb8 ;  opacity: 100%;">
+      style="font-size: 32px; color:#ffffff ;  opacity: 100%;">
       {%- for line in site.description -%}
       <span>{{ line }}</span><br>
       {%- endfor -%}
