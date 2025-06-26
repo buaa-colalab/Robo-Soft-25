@@ -41,6 +41,8 @@ nav:
         url: './challenge.html#leaderboard'
       - title: 'Data Details'
         url: './challenge.html#data-details'
+      - title: 'Codebase'
+        url: './challenge.html#codebase'
       - title: 'Development Toolkit'
         url: './challenge.html#development-toolkit'
 

@@ -270,28 +270,73 @@ details[open] .example-btn {
 }
 </style>
 
+## Codebase
+<!-- ### Installation
+```bash
+git clone https://github.com/jobswei/SoftRoboticaSimulator
+git checkout "v1.0"
+```
+Then follow `README.md` to install dependencies. -->
+
+### Inference
+```bash
+# inference VLN task
+python -m ssim.inference.vln \
+    --data-path your/data_path \
+    --work-dir your/work_dir \
+    --control-mode torque \ # or action, depending on your control mode
+    --run-gt \ # If you want to execute the provided trajectory
+    --visualize \ # If you want to save images and a video of the entire trajectory
+# inference VLM task
+python -m ssim.inference.vlm \
+    --data-path your/data_path \
+    --work-dir your/work_dir \
+    --run-gt \ # If you want to execute the provided trajectory
+    --visualize \ # If you want to save images and a video of the entire trajectory
+```
+
+### Customize Model
+
+**Define Your Model**
+
+`ssim/inference/model.py` provides the basic framework for custom models. You can define your own model based on `VLNModel` or `VLMModel`, implement their predefined `__init__()` and `forward()` methods, and ensure interface alignment. Once completed, you can directly run the test script to test your model.
+
+**Train Your Model**
+
+If you need to perform **imitation learning** training, after defining your model, you can directly use the provided dataset for training.
+
+For **reinforcement learning** training:
+- `SoftManipulationEnvironment` for VLM tasks is defined in `ssim/envs/soft_manipulation.py`.
+- The base environments for VLN tasks are defined in `ssim/envs/navigation_snake.py`, including:
+  - `NavigationSnakeTorqueEnvironment` (for torque-based control)
+  - `NavigationSnakeActionEnvironment` (for high-level action control)
+
+You can develop your RL training environment by inheriting from these base environments, customizing methods such as `reward()` and `get_state()`, and refer to the initialization scripts in `ssim/inference/vln` or `ssim/inference/vlm` for environment setup.
+
 ## Development Toolkit
 
-During this workshop, we provide a base Docker image for teams to set up environment. The image is pre-configured with dependencies for Elastica and PyTorch, and can be obtained via the link: TBD (Estimated Availability Time: June 13th)
+During this workshop, we provide a base Docker image for teams to set up environment. The image is pre-configured with dependencies for Elastica and PyTorch, and can be obtained via `docker pull` command.
 
 To build base environment container, you can follow the steps below:
 ```
-docker pull <images>
-docker run -v <data_path>:/app/data -d --name <name> -it <images> /bin/bash
+docker pull crpi-juuq9gkz24fdpj2r.cn-beijing.personal.cr.aliyuncs.com/wangluting/robosoft:1.0
+docker run -v <data_path>:/data -d --name <name> -it <image> /bin/bash
 ```
 
 Teams are required to develop programs based on the provided base image, push the image to Docker Hub, and submit the image URL on Docker Hub. We will use this image for testing.
 
-Specifically, we will mount the test data into the container directory `/app/data` via `docker run -v`, so **please ensure the `/app/data` directory in the image is empty.**
+Specifically, we will mount the test data into the container directory `data` via `docker run -v`, so **please ensure the `/data` directory in the image is empty.**
 
 After mounting, the following directory structure will be obtained. Teams should maintain the file layout and complete the task based on this structure.
 
 ```plaintext
-/app/data
-├── VLN
+/data
+├── vln_train
+├── vln_train
+├── vln_eval
 │   ├── ...
 │   └── annotations.json
-└── VLM
+└── vlm_eval
     ├── ...
     └── annotations.json
 ```
