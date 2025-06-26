@@ -52,13 +52,33 @@
 
 
     .page-header1 {
-      background-image: url('pics/1a.png');
+      position: relative;
+      background-image: url('pics/background.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       padding-bottom: 1rem;
       background-blend-mode: multiply;
       background-color: rgba(17, 23, 29, .1);
+    }
+
+    .page-header1::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      /* 可根据需要调整颜色和透明度 */
+      z-index: 0;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+
+    .page-header1 > * {
+      position: relative;
+      z-index: 1;
     }
 
     .page-header2 {
