@@ -332,7 +332,7 @@ After mounting, the following directory structure will be obtained. Teams should
 ```plaintext
 /data
 ├── vln_train
-├── vln_train
+├── vlm_train
 ├── vln_eval
 │   ├── ...
 │   └── annotations.json
