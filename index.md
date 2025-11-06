@@ -13,11 +13,11 @@ This workshop focuses on the multimodal perception and decision-making of soft r
 ## Invited Speakers
 
 <div class="speaker-grid">
-  <div class="speaker">
-    <img src="pics/speakers/Cosimo Della Santina.png" alt="Cosimo Della Santina" class="speaker-img">
+  <!-- <div class="speaker"> -->
+    <!-- <img src="pics/speakers/Cosimo Della Santina.png" alt="Cosimo Della Santina" class="speaker-img"> -->
     <!-- https://cosimodellasantina.eu/ -->
-    <p><a href="#">Cosimo Della Santina</a><br>TU Delft</p>
-  </div>
+    <!-- <p><a href="#">Cosimo Della Santina</a><br>TU Delft</p> -->
+  <!-- </div> -->
   <div class="speaker">
     <img src="pics/speakers/Xiang LI.png" alt="Xiang LI" class="speaker-img">
     <!-- https://sites.google.com/view/homepageoflixiang -->
@@ -32,11 +32,12 @@ This workshop focuses on the multimodal perception and decision-making of soft r
     <img src="pics/speakers/Qin Jin.jpg" alt="Qin Jin" class="speaker-img">
     <p><a href="#">Qin Jin</a><br>Renmin University of China</p>
   </div>
-  <div class="speaker">
-    <img src="pics/speakers/Jiebo Luo.png" alt="Jiebo Luo" class="speaker-img">
-    <!-- https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en -->
-    <p><a href="#">Jiebo Luo</a><br>University of Rochester</p>
-  </div>
+
+  <!-- <div class="speaker"> -->
+  <!-- <img src="pics/speakers/Jiebo Luo.png" alt="Jiebo Luo" class="speaker-img"> -->
+  <!-- https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en -->
+  <!-- <p><a href="#">Jiebo Luo</a><br>University of Rochester</p> -->
+  <!-- </div> -->
 </div>
 
 <style>
