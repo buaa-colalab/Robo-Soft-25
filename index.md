@@ -220,6 +220,14 @@ The solution space must jointly optimize semantic localization accuracy, deforma
     <p><a href="#">Luting Wang</a><br>Beihang University</p>
   </div>
   <div class="speaker">
+    <img src="pics/organizers/Ziyu Wei.jpg" alt="Ziyu Wei" class="speaker-img">
+    <p><a href="#">Ziyu Wei</a><br>Beihang University</p>
+  </div>
+  <div class="speaker">
+    <img src="pics/organizers/Hongliang Huang.jpg" alt="Hongliang Huang" class="speaker-img">
+    <p><a href="#">Hongliang Huang</a><br>Beihang University</p>
+  </div>
+  <div class="speaker">
     <img src="pics/organizers/Jiaqi Liu.png" alt="Jiaqi Liu" class="speaker-img">
     <!-- http://softrobotics.buaa.edu.cn/peoples.html -->
     <p><a href="#">Jiaqi Liu</a><br>Beihang University</p>
@@ -240,18 +248,6 @@ The solution space must jointly optimize semantic localization accuracy, deforma
   </div>
 </div>
 
-## Challenge Technical Committee
-
-<div class="speaker-grid">
-  <div class="speaker">
-    <img src="pics/organizers/Ziyu Wei.jpg" alt="Ziyu Wei" class="speaker-img">
-    <p><a href="#">Ziyu Wei</a><br>Beihang University</p>
-  </div>
-  <div class="speaker">
-    <img src="pics/organizers/Hongliang Huang.jpg" alt="Hongliang Huang" class="speaker-img">
-    <p><a href="#">Hongliang Huang</a><br>Beihang University</p>
-  </div>
-</div>
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
